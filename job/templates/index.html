@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<style>
+    /* Reset default margin and padding */
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+/* Hero section */
+#hero {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* About section */
+#about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+</style>
+<body>
+    <section id="hero">
+        <div class="container">
+            <h1>Welcome to Our Website</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac magna et metus aliquet rutrum a nec tortor. Duis aliquam ipsum vitae lorem sollicitudin, vel varius nunc vestibulum. Integer volutpat dolor quis fermentum posuere.</p>
+                <p>Phasellus commodo vestibulum sapien, at tempus metus fringilla ac. Praesent hendrerit massa nunc, a lacinia tellus maximus et. Quisque posuere congue augue, eget interdum sapien rhoncus sed. Morbi ultricies metus vel sem dapibus, ut condimentum metus fringilla.</p>
+                <p>In hac habitasse platea dictumst. Nullam vitae tortor mi. Donec finibus finibus diam. Phasellus sed luctus neque. Integer in semper turpis. In et nunc nec massa finibus laoreet. Sed tempus quam lectus, eget bibendum risus mollis eu.</p>
+                <a href="{% url 'job_application_create' %}" class="btn">Get started now</a>
+        </div>
+    </section>
+   
+</body>
+</html>
